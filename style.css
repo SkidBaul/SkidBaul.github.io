@@ -769,6 +769,10 @@ a.service-card:focus-visible {
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Hero-Bild am Handy vollständig zeigen (nicht beschneiden) */
+  .hero-image-wrap { height: auto; min-height: 0; }
+  .hero-img { height: auto; object-fit: contain; animation: none; }
 }
 
 @media (max-width: 480px) {
