@@ -1,0 +1,14 @@
+# Editor- / Tooling-Ordner (gehören nicht auf den Webserver)
+.claude/
+.idea/
+
+# Abhängigkeiten / Build
+node_modules/
+
+# Betriebssystem
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Deploy-Artefakte
+daxinger-website.zip
