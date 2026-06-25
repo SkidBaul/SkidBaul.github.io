@@ -739,7 +739,9 @@ a.service-card:focus-visible {
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-content { padding: 64px 24px 48px; margin: 0 auto; max-width: 600px; }
-  .hero-image-wrap { min-height: 320px; height: 360px; order: -1; }
+  /* Gestapeltes Hero: Bild vollständig in natürlicher Größe zeigen (kein Beschnitt) */
+  .hero-image-wrap { height: auto; min-height: 0; order: -1; }
+  .hero-img { position: static; width: 100%; height: auto; object-fit: contain; animation: none; }
   .leitbild-grid { grid-template-columns: 1fr; gap: 40px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
 }
